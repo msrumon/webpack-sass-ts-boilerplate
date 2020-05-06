@@ -6,13 +6,12 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 const config: Configuration = {
-  mode: 'development',
+  mode: 'production',
   entry: './src/ts/main.ts',
   output: {
     path: join(__dirname, 'dist'),
     filename: 'bundle.[contenthash].js',
   },
-  devtool: 'source-map',
   module: {
     rules: [
       {
